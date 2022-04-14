@@ -25,6 +25,7 @@ export default function AppRoutes() {
       {
         isLogging ? (
           <>
+    <Route path="/" element={<My404Component />}/>
             {
               isAdmin ? (
                 <>
@@ -35,6 +36,8 @@ export default function AppRoutes() {
                 </>
               ) : null
             }
+                <Route path="/" element={<My404Component />}/>
+
             <Route path="/leaderBoard" element={<Leader_Board />} />
             <Route index path="/profile" element={<Profile />} />
             <Route path="/logout" element={<Logout />} />
